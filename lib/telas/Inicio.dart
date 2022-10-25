@@ -20,6 +20,12 @@ class _InicioState extends State<Inicio> {
   }
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<Video>>(
         future: _listarVideos(widget.pesquisa),
